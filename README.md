@@ -4,7 +4,7 @@
 
 | Filename       | Description         |
 | -------------- | ------------------- |
-| 0x00-ES6_basic | Basic synatx of ES6 |
+| 0x00-ES6_basic | Basic syntax of ES6 |
 
 ## Author
 
