@@ -1,4 +1,11 @@
+/**
+ * Represent Building class
+ */
 export default class Building {
+  /**
+   * Create a new building
+   * @param {Number} sqft
+   */
   constructor(sqft) {
     this.sqft = sqft;
 
@@ -11,6 +18,9 @@ export default class Building {
     }
   }
 
+  /**
+   * Set sqft of the building
+   */
   set sqft(sqft) {
     if (typeof sqft !== 'number') {
       throw new TypeError('sqft must be a number');
@@ -18,6 +28,9 @@ export default class Building {
     this._sqft = sqft;
   }
 
+  /**
+   * Get sqft of the building
+   */
   get sqft() {
     return this._sqft;
   }
