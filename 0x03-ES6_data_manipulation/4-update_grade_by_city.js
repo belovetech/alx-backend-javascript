@@ -1,8 +1,9 @@
 export default function updateStudentGradeByCity(
   studentsList,
   city,
-  newGrades
+  newGrades,
 ) {
+  if (!Array.isArray(studentsList)) return [];
   const results = studentsList
     .filter((student) => student.location === city)
     .map((el) => {
