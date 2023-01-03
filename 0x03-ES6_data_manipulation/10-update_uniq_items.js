@@ -3,7 +3,7 @@
  * @param {Map} map - A collection of map
  */
 export default function (map) {
-  if (!map instanceof Map) {
+  if (!(map instanceof Map)) {
     throw new Error('Cannot process');
   }
   map.forEach((value, key, map) => {
