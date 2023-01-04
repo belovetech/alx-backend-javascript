@@ -29,5 +29,14 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 
+export interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
+
+console.log(printTeacher('Raheem', 'Abeeb'));
 console.log(teacher3);
 console.log(director1);
