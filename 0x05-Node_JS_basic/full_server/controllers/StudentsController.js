@@ -33,7 +33,7 @@ class StudentsController {
       const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
       readDatabase(DB_FILE)
         .then((studentReport) => {
-          const listOfFirstName = `list: ${studentReport[major].join(', ')}`;
+          const listOfFirstName = `List: ${studentReport[major].join(', ')}`;
           response.send(listOfFirstName);
         })
         .catch((err) => {
