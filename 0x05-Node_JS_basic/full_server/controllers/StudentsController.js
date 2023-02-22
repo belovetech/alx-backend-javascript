@@ -9,9 +9,9 @@ class StudentsController {
         data.push('This is the list of our students');
         for (const [field, list] of Object.entries(report)) {
           if (field) {
-            const listOfFirstName = list.join(',');
+            const listOfFirstName = list.join(', ');
             data.push(
-              `Number of students in ${field}: ${list.length}. List: ${listOfFirstName}`,
+              `Number of students in ${field}: ${list.length}. List: ${listOfFirstName}`
             );
           }
         }
