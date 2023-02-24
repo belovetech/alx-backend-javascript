@@ -1,12 +1,6 @@
 const assert = require('assert');
 const calculateNumber = require('./1-calcul');
 
-// describe('calculateNumber', () => {
-//   it('Should test type SUM', () => {
-//     assert.strictEqual(calculateNumber('SUM', 1.3, 2.5), 4);
-//   });
-// });
-
 describe('calculateNumber', () => {
   describe('SUM', () => {
     it('Should test positive floating number', () => {
