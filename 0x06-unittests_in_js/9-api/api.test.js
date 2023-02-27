@@ -22,10 +22,9 @@ describe('API integration test for cart page', () => {
   });
 
   it('test response status code of cart/ with negative id', (done) => {
-    const id = 25;
+    const id = -25;
     request.get(`${API_URL}/${id}`, (err, res, body) => {
-      expect(res.statusCode).to.equal(200);
-      expect(body).to.be.equal('Payment methods for cart 25');
+      expect(res.statusCode).to.equal(404);
       done();
     });
   });
